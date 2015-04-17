@@ -18,6 +18,7 @@ public class ThousandNumberTest {
         assertThatNumberInBritishWords(2_000).isEqualTo("two thousand");
         assertThatNumberInBritishWords(5_000).isEqualTo("five thousand");
         assertThatNumberInBritishWords(846_000).isEqualTo("eight hundred and forty six thousand");
+        assertThatNumberInBritishWords(10_001).isEqualTo("ten thousand and one");
     }
 
     StringAssert assertThatNumberInBritishWords(int number) {

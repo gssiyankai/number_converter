@@ -18,8 +18,8 @@ class ThousandNumber extends CompositeNumber {
     }
 
     @Override
-    public String toEnglishWords() {
-        return mergeBritishWords(thousand, SCALE, EMPTY, hundred);
+    public void toEnglishWords(StringBuilder words) {
+        mergeBritishWords(words, thousand, SCALE, EMPTY, hundred);
     }
 
 }

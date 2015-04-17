@@ -3,7 +3,7 @@ package number.converter;
 /**
  * This class represents a number that is a multiple of 10 smaller than 100.
  */
-class TentyNumber implements Number {
+class TentyNumber extends SingleNumber {
 
     private static final String[] TENS = { "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" };
 

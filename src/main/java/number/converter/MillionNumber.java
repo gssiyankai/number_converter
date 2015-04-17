@@ -19,8 +19,8 @@ class MillionNumber extends CompositeNumber {
     }
 
     @Override
-    public String toEnglishWords() {
-        return mergeBritishWords(million, SCALE, EMPTY, thousand);
+    public void toEnglishWords(StringBuilder words) {
+        mergeBritishWords(words, million, SCALE, EMPTY, thousand);
     }
 
 }

@@ -23,8 +23,8 @@ class TenNumber extends CompositeNumber {
     }
 
     @Override
-    public String toEnglishWords() {
-        return mergeBritishWords(ten, EMPTY, EMPTY, unit);
+    public void toEnglishWords(StringBuilder words) {
+        mergeBritishWords(words, ten, EMPTY, EMPTY, unit);
     }
 
 }

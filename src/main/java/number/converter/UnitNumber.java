@@ -3,7 +3,7 @@ package number.converter;
 /**
  * This class represents a number from 1 to 9.
  */
-final class UnitNumber implements Number {
+final class UnitNumber extends SingleNumber {
 
     private static final String[] UNITS = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
